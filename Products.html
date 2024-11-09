@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hooked Harmony - Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Products.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Products.html" class="active">Products</a></li>
+            <li><a href="Invoice.html">Invoice</a></li>
+            <li><a href="Cart.html">Cart</a></li> <!-- New Cart link -->
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo">
+            <img src="Assets\small logo.jpg" alt="Hooked Harmony Logo"> <!-- Replace "logo.png" with your actual logo path -->
+        </div>
+        <div>
+            <h1>Welcome to Hooked Harmony</h1>
+            <p>Handmade with love just for you!</p>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar Navigation for Product Categories -->
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#hats" onclick="loadCategory('hats')">Hats</a></li>
+                <li><a href="#bathing-suits" onclick="loadCategory('bathing-suits')">Bathing Suits</a></li>
+                <li><a href="#bags" onclick="loadCategory('bags')">Bags</a></li>
+                <li><a href="#amigurumis" onclick="loadCategory('amigurumis')">Amigurumis</a></li>
+                <li><a href="#keychains" onclick="loadCategory('keychains')">Keychains</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content for Product Display -->
+        <div class="main-content">
+            <h1>Our Products</h1>
+            <div id="productGrid" class="product-grid">
+                <!-- Products will load here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="Product.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
