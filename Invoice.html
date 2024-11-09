@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - Hooked Harmony</title>
+    <link rel="stylesheet" href="invoice.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <div class="invoice-container">
+        <h1>Invoice</h1>
+        
+        <!-- Invoice and Date Information -->
+        <div class="invoice-info">
+            <p>Invoice Number: <span id="invoiceNumber"></span></p>
+            <p>Date: <span id="currentDate"></span></p>
+        </div>
+
+        <!-- Shipping Information -->
+        <section class="shipping-info">
+            <h2>Shipping Information</h2>
+            <p><strong>Full Name:</strong> <span id="customerName"></span></p>
+            <p><strong>Address:</strong> <span id="customerAddress"></span></p>
+        </section>
+
+        <!-- Order Summary -->
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+            <table id="orderTable">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Order items will be populated here from local storage -->
+                </tbody>
+            </table>
+            <p class="total">Total: $<span id="totalAmount"></span></p>
+        </section>
+    </div>
+    <script src="invoice.js"></script> <!-- JavaScript file for invoice functionality -->
+</body>
+</html>
+
