@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFDD44;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    color: #333;
+}
+
+.logo {
+    float: left;
+    margin-right: 15px;
+}
+
+.logo img {
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    background-color: #D2B48C;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.ceo-photo {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.ceo-photo img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.ceo-info {
+    flex: 2;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button-container button {
+    background-color: #A67B5B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
