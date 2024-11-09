@@ -1,0 +1,135 @@
+/* Basic page setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFDD44;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main container for the cart items */
+.cart-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.cart-container h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Cart item styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+.cart-item:last-child {
+    border-bottom: none;
+}
+.cart-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.cart-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.cart-item-info h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+.cart-item-info p {
+    margin: 5px 0 0;
+    color: #666;
+}
+.cart-item-price {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Quantity control styling */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.quantity-control button {
+    background-color: #A67B5B;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+.quantity-control button:hover {
+    background-color: #8B5B3A;
+}
+.quantity-control input {
+    width: 40px;
+    text-align: center;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Total price and checkout button */
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #ddd;
+}
+.checkout-button {
+    width: 100%;
+    background-color: #A67B5B;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.checkout-button:hover {
+    background-color: #8B5B3A;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .cart-container {
+        width: 95%;
+    }
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .quantity-control {
+        margin-top: 5px;
+    }
+}
